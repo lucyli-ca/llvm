@@ -34,7 +34,11 @@ cl::opt<bool>
     UseNewDbgInfoFormat("experimental-debuginfo-iterators",
                         cl::desc("Enable communicating debuginfo positions "
                                  "through iterators, eliminating intrinsics"),
+<<<<<<< HEAD
                         cl::init(false)); // INTEL
+=======
+                        cl::init(false));
+>>>>>>> fd3a0c185f177351207783fc2a604dac086cdaf7
 
 DPMarker *BasicBlock::createMarker(Instruction *I) {
   assert(IsNewDbgInfoFormat &&
